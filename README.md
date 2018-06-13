@@ -1,6 +1,14 @@
-frontend-nanodegree-arcade-game
-===============================
+# Frogger #
+JavaScript game made for Udacity Google Front-end web development nanodegree program, based on the classic Frogger arcade game!
 
-Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
+## Instructions ##
+To play, visit link in the description. To move your character, move the arrow keys in the desired direction. Reach the water without hitting any of the taxis in order to increase your score. Aim for the highest score possible!
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+## Resources ##
+Game engine and most of the images (except the taxis) were provided to me by the Udacity team
+
+## Contributions ##
+Contributions would be greatly appreciated and can be done at any time. Please email me with any questions if necessary. I look forward to adding new features and improving the game. 
+
+## Screenshots ##
+![Playing](/screenshots/play.png?raw=true "Frogger game image")
