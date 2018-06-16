@@ -1,4 +1,7 @@
 let score = 0; 
+window.onload = function() {
+	alert('Welcome to my version of the Frogger arcade game! Press "OK" to play');
+}
 
 //Returns random lane
 function randomPos(lanes) {
