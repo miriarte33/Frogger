@@ -42,8 +42,9 @@ class Enemy {
 		//recieved help from udacity student-helpers 'lloan' and 'mvalentin' on slack
 		const center = this.width/2; 
 		if (this.x + center > player.x && this.x - center < player.x && this.y + center > player.y && this.y - center < player.y) { // compare if the player is in the this's "personal space" i.e hitting its center
-			player.reset();  
+			player.reset();
 			score = 0; 
+			allEnemies.splice(3); // restart enemies to 3 if the player loses
 			scoreCounter.textContent = `Score: ${score}`; 
 			alert('You Lose'); 
 		}
@@ -73,7 +74,7 @@ class Player {
 			scoreCounter.textContent = `Score: ${score}`;
 			this.reset();
 			if (score % 5 == 0 && score !== 0) {
-				createEnemies(1); 
+				createEnemies(1);
 			}
 		}
 	}
