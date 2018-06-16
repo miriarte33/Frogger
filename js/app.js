@@ -9,8 +9,9 @@ function randomPos(lanes) {
 }
 
 //Creates 3 enemies on the screen
-function createEnemies() {
-	for (let i=0; i<3; i++) {
+function createEnemies(amount = 3) {
+	console.log(amount); 
+	for (let i=0; i<amount; i++) {
 		allEnemies.push(new Enemy()); 
 	}
 }
@@ -34,6 +35,7 @@ class Enemy {
 		if (this.x > 505) { //redo the enemies position once it goes off canvas
 			this.x = 0;
 			this.y = randomPos([60, 145, 230]);
+			this.speed = Math.floor((Math.random()*250) + 100);
 		}
 		
 		//handle collision detection
@@ -70,7 +72,9 @@ class Player {
 			score++; 
 			scoreCounter.textContent = `Score: ${score}`;
 			this.reset();
-			console.log(score); 
+			if (score % 5 == 0 && score !== 0) {
+				createEnemies(1); 
+			}
 		}
 	}
 	
