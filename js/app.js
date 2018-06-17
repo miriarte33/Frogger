@@ -49,6 +49,7 @@ class Enemy {
 			player.reset();
 			score = 0; 
 			allEnemies.splice(3); // restart enemies to 3 if the player loses
+			gems.pop() // remove gem if the player loses
 			scoreCounter.textContent = `Score: ${score}`; 
 			alert('You Lose'); 
 		}
@@ -118,7 +119,7 @@ class Gem {
 	constructor(image = 'gem-orange.png') {
 		this.sprite = `images/${image}`;
 		this.x = randomIndex([0, 100, 200, 300, 400]); 
-		this.y = randomIndex ([60, 135, 230]); 
+		this.y = randomIndex ([60, 145, 230]); 
 		this.points = (function() {
 			switch(image) {
 				case 'gem-orange.png': 
