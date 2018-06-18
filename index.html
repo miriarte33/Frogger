@@ -6,18 +6,34 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<h1 id='score'> Score: 0 </h1>
-	<aside id='how-to-play'>
-		<ul> 
-			<p id='label'> How to play: </p> 
-			<li> Up: ↑ </li>
-			<li> Down: ↓ </li> 
-			<li> Left: ← </li> 
-			<li> Right: → </li> 
-		</ul>
-	</aside>
-    <script src="js/resources.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/engine.js"></script>
+	<main>
+		<h1 id='score'> Score: 0 </h1>
+		<aside id='how-to-play'>
+			<ul class='no-bullets'> 
+				<p class='label'> How to play: </p> 
+				<li> Up: ↑ </li>
+				<li> Down: ↓ </li> 
+				<li> Left: ← </li> 
+				<li> Right: → </li> 
+			</ul>
+		</aside>
+		<aside id='gem'>
+			<ul class='no-bullets'>
+				<p class='label'> Gems: </p>
+				<li> Orange: 2 points </li>
+				<li> Blue: 3 points </li>
+				<li> Green: 4 points </li>
+			</ul>
+		</aside>
+		<ol id='high-scores'>
+			<p class='label'> High scores: </p>
+			<li id='high-score-1'> - </li>
+			<li id='high-score-2'> - </li>
+			<li id='high-score-3'> - </li>
+		</ol>
+		<script src="js/resources.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/engine.js"></script>
+	</main>
 </body>
 </html>

@@ -9,18 +9,35 @@ body {
 	margin-right: 200px; 
 }
 
-#label {
+#gem {
+	float: left; 
+	margin-top: 15px; 
+	margin-left: 200px; 
+}
+
+.label {
 	font-weight: bold;  
 }
 
-li {
+.no-bullets {
 	list-style: none; 
 }
 
-ul {
+li {
+	list-style-position: inside; 
+}
+
+ul,
+ol {
 	border: 1px solid blue; 
 	background-color: rgba(63, 97, 191, 0.55); 
 	padding-right: 1em; 
 	padding-left: 1em; 
 	padding-bottom: 1em; 
+}
+
+#high-scores {
+	position: fixed; 
+	bottom: 0; 
+	width: 100%; 
 }
